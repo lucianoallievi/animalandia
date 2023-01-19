@@ -1,0 +1,12 @@
+/*--- FOOTER ---*/
+footer {
+  display: flex;
+  background-color: $colorFondo3;
+  justify-content: center;
+  a {
+    img {
+      height: 45px;
+      margin: 20px;
+    }
+  }
+}

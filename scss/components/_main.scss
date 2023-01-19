@@ -1,0 +1,108 @@
+/*--- INDEX ---*/
+main {
+  background-color: $colorFondo4;
+
+  h2 {
+    color: white;
+    font-family: "Overpass", sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* HERO */
+  .hero {
+    width: 100%;
+    height: 70vh;
+    /*background-image: url("../img/cachorros.jpg");*/
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.806),
+        rgba(255, 255, 255, 0.159)
+      ),
+      url("../img/cachorros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        color: white;
+        font-family: "Overpass", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        text-align: center;
+      }
+      h2 {
+      }
+    }
+  }
+
+  .seccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    p {
+      color: white;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    iframe {
+    }
+  }
+
+  .galeria {
+    padding-top: 50px;
+    h2 {
+    }
+  }
+  .galeriaGrid {
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+    padding: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+
+    div {
+      border: solid 2px #b592a0;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .gal3 {
+      grid-row: span 2;
+    }
+
+    .gal4 {
+      grid-column: span 2;
+    }
+
+    .gal9 {
+      grid-area: span 2 / span 2;
+    }
+
+    .gal23 {
+      grid-column: span 2;
+    }
+  }
+}

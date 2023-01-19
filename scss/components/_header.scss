@@ -1,0 +1,37 @@
+/*--- HEADER ---*/
+
+header {
+  background-color: $colorFondo1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+
+  a {
+    img {
+      width: 130px;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      padding-top: 30px;
+
+      li {
+        a {
+          color: black;
+          font-style: regular;
+          font-weight: 400;
+          font-family: "Overpass", sans-serif;
+          font-size: 20px;
+          text-decoration: none;
+          margin: 25px;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
