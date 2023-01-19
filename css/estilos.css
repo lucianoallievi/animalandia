@@ -32,6 +32,7 @@ header {
 /*--- INDEX ---*/
 main {
   background-color: #22181c;
+  height: 70vh;
   /* HERO */ }
   main h2 {
     color: white;
