@@ -4,7 +4,12 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* Colores de fondo*/
+main .hero, main .hero div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 /*--- HEADER ---*/
 header {
   background-color: #1ea896;
@@ -17,7 +22,8 @@ header {
   header nav ul {
     display: flex;
     list-style: none;
-    padding-top: 30px; }
+    margin: 0;
+    padding: 0; }
     header nav ul li a {
       color: black;
       font-style: regular;
@@ -33,47 +39,48 @@ header {
 main {
   background-color: #22181c;
   /* HERO */ }
-  main h2 {
-    color: white;
+  main h1 {
     font-family: "Overpass", sans-serif;
-    font-style: bold;
+    color: white;
+    font-weight: 700;
+    font-size: 80px;
+    text-align: center; }
+  main h2 {
+    font-family: "Overpass", sans-serif;
+    color: white;
     font-weight: 700;
     font-size: 40px;
+    text-align: center; }
+  main p {
+    font-family: "Overpass", sans-serif;
+    color: white;
+    font-size: 14px;
     text-align: center; }
   main .hero {
     width: 100%;
     height: 70vh;
-    /*background-image: url("../img/cachorros.jpg");*/
     background: linear-gradient(rgba(0, 0, 0, 0.806), rgba(255, 255, 255, 0.159)), url("../img/cachorros.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main .hero div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      main .hero div h1 {
-        color: white;
-        font-family: "Overpass", sans-serif;
-        font-weight: 700;
-        font-size: 80px;
-        text-align: center; }
+    background-position: center; }
   main .seccion {
-    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
     padding: 40px; }
     main .seccion p {
       color: white; }
+      main .seccion p span {
+        color: #1ea896; }
     main .seccion h2 {
       margin-bottom: 20px; }
+  main .contacto {
+    padding: 30px; }
+  main .nosotros {
+    padding-left: 100px;
+    padding-right: 100px; }
   main .galeria {
     padding-top: 50px; }
   main .galeriaGrid {
@@ -127,6 +134,8 @@ footer {
 @media screen and (max-width: 700px) {
   header {
     flex-direction: column; }
+  header nav ul {
+    padding-top: 30px; }
   main section iframe {
     width: 466px;
     height: 262px; } }
@@ -138,14 +147,18 @@ footer {
 
 @media screen and (max-width: 515px) {
   header nav ul {
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0; }
+  footer a img {
+    height: 32px;
+    margin: 15px; } }
 
-@media screen and (max-width: 515px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   main section iframe {
     width: 323px;
-    height: 181px; } }
-
-@media screen and (max-width: 515px) {
+    height: 181px; }
   main h1 {
     font-size: 50px; }
   main h2 {

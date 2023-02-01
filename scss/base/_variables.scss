@@ -1,5 +1,30 @@
-/* Colores de fondo*/
-$colorFondo1: #1ea896;
-$colorFondo2: #22181c;
-$colorFondo3: #b592a0;
-$colorFondo4: #22181c;
+//colores
+$colores: #1ea896, #22181c, #b592a0, #22181c;
+
+//fuente
+$fuente: "Overpass", sans-serif;
+
+//texto
+$texto: (
+  col: white,
+  we: 700,
+  size1: 80px,
+  size2: 40px,
+  size3: 14px,
+  al: center,
+);
+
+//extend
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex($flex, $justify, $align, $direction) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}

@@ -1,7 +1,7 @@
 /*--- FOOTER ---*/
 footer {
   display: flex;
-  background-color: $colorFondo3;
+  background-color: nth($colores, 3);
   justify-content: center;
   a {
     img {
